@@ -1,0 +1,147 @@
+html {
+  background-color: #f7f6f4;
+}
+
+.app {
+  text-align: center;
+  margin: 45px 0px;
+}
+
+.app-header {
+  color: #ffffff;
+  text-align: center;
+  border-bottom: #d3d3d3 1px solid;
+  border-top: #d3d3d3 1px solid;
+  padding: 15px;
+  background-color: #121c4e;
+  margin: 30px 0px;
+}
+
+.loader {
+  width: 120px;
+  height: 120px;
+  margin: -75px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #121c4e;
+  border-radius: 50%;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.review-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0px 40px 50px;
+}
+
+
+.shop-container {
+  max-width: 300px;
+  min-width: 200px;
+  border: #d3d3d3 1px solid;
+  border-radius: 20px;
+  padding: 30px 25px;
+  margin: 10px 15px;
+  box-shadow: 0 0 10px #d3d3d3;
+  background-color: #ffffff;
+  color: #050d3a;
+}
+
+@media (max-width: 1245px) {
+  .shop-container {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 1095px) {
+  .shop-container {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 945px) {
+  .shop-container {
+    max-width: 275px;
+  }
+}
+
+@media (max-width: 815px) {
+  .shop-container {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 660px) {
+  .shop-container {
+    max-width: 400px;
+  }
+}
+
+.shop-name {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 0px;
+}
+
+.shop-image {
+  padding: 20px 0px 15px;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.rating-container {
+  color: transparent;
+  font-size: 26px;
+  position: relative;
+  display: inline-block;
+}
+
+.rating-container:before {
+  content: '★★★★★';
+  color: #d3d3d3;
+  position: absolute;
+}
+
+.rating-container:after {
+  content: '★★★★★';
+  color: #ffd700;
+  position: absolute;
+  left: 0;
+}
+
+.star-rating-0:after { width: 0%; }
+.star-rating-1:after { width: 20%; }
+.star-rating-2:after { width: 40%; }
+.star-rating-3:after { width: 60%; }
+.star-rating-4:after { width: 80%; }
+.star-rating-5:after { width: 100; }
+
+.shop-review {
+  font-style: italic;
+  color: #696969;
+  padding-top: 12px;
+}
+
+.reviewer-name {
+  padding: 5px 0px;
+}
